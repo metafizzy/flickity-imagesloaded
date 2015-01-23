@@ -1,0 +1,29 @@
+{
+  "name": "flickity-imagesloaded",
+  "version": "0.1.0",
+  "description": "Enable imagesLoaded option for Flickity",
+  "main": "flickity-imagesloaded.js",
+  "dependencies": {
+    "flickity": "0.x",
+    "imagesloaded": "~3.1.8"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/metafizzy/flickity-imagesloaded.git"
+  },
+  "keywords": [
+    "flickity",
+    "imagesloaded",
+    "browser",
+    "DOM"
+  ],
+  "author": "David DeSandro",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/metafizzy/flickity-imagesloaded/issues"
+  },
+  "homepage": "https://github.com/metafizzy/flickity-imagesloaded"
+}

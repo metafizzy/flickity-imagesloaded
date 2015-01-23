@@ -1,0 +1,32 @@
+{
+  "name": "flickity-imagesloaded",
+  "main": "flickity-imagesloaded.js",
+  "version": "0.1.0",
+  "dependencies": {
+    "flickity": "0.x",
+    "imagesloaded": "~3.1.8"
+  },
+  "homepage": "https://github.com/metafizzy/flickity-imagesloaded",
+  "authors": [
+    "David DeSandro"
+  ],
+  "description": "Enable imagesLoaded option for Flickity",
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "flickity",
+    "imagesloaded"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "package.json"
+  ]
+}
