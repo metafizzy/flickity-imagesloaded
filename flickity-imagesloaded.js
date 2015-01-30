@@ -49,7 +49,8 @@ Flickity.prototype.imagesLoaded = function() {
     // check if image is a cell
     var cell = _this.getCell( image.img );
     // otherwise get its parents
-    var cellElem = cell.element || utils.getParent( image.img, '.flickity-slider > *' );
+    var cellElem = cell && cell.element ||
+      utils.getParent( image.img, '.flickity-slider > *' );
     _this.cellSizeChange( cellElem );
   }
   imagesLoaded( this.slider ).on( 'progress', onImagesLoadedProgress );
