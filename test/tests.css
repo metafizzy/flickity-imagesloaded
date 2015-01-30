@@ -1,0 +1,15 @@
+body {
+  font-family: sans-serif;
+  color: #333;
+}
+
+.gallery {
+  border: 1px solid;
+  width: 400px;
+  margin-bottom: 40px;
+}
+
+.gallery img {
+  display: block;
+  height: 140px;
+}

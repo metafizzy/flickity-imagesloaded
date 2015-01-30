@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+
+  <title>Flickity tests</title>
+
+  <link rel="stylesheet" href="../bower_components/qunit/qunit/qunit.css" media="screen" />
+  <link rel="stylesheet" href="../bower_components/flickity/css/flickity.css" media="screen" />
+  <link rel="stylesheet" href="tests.css" media="screen" />
+
+  <script src="../bower_components/qunit/qunit/qunit.js"></script>
+
+  <!-- dependencies -->
+  <script src="../bower_components/get-style-property/get-style-property.js"></script>
+  <script src="../bower_components/get-size/get-size.js"></script>
+  <script src="../bower_components/matches-selector/matches-selector.js"></script>
+  <script src="../bower_components/eventEmitter/EventEmitter.js"></script>
+  <script src="../bower_components/eventie/eventie.js"></script>
+  <script src="../bower_components/doc-ready/doc-ready.js"></script>
+  <script src="../bower_components/classie/classie.js"></script>
+  <!--<script src="../bower_components/unidragger/unidragger.js"></script>
+  <script src="../bower_components/fizzy-ui-utils/utils.js"></script>
+  <script src="../bower_components/unipointer/unipointer.js"></script> -->
+  <script src="../bower_components/imagesloaded/imagesloaded.js"></script>
+  <!-- Flickity -->
+  <!-- <script src="../bower_components/flickity/js/tap-listener.js"></script> -->
+  <script src="../bower_components/flickity/js/utils.js"></script>
+  <script src="../bower_components/flickity/js/cell.js"></script>
+  <script src="../bower_components/flickity/js/prev-next-button.js"></script>
+  <script src="../bower_components/flickity/js/page-dots.js"></script>
+  <script src="../bower_components/flickity/js/player.js"></script>
+  <script src="../bower_components/flickity/js/unipointer.js"></script>
+  <script src="../bower_components/flickity/js/drag.js"></script>
+  <script src="../bower_components/flickity/js/animate.js"></script>
+  <script src="../bower_components/flickity/js/cell-change.js"></script>
+  <script src="../bower_components/flickity/js/flickity.js"></script>
+  <!-- turn off accessibility for these tests
+    was causing bugs with dragging tests -->
+  <script>
+    // turn off accessibility for these tests
+    // was causing bugs with dragging tests
+    Flickity.defaults.accessibility = false;
+  </script>
+  <script src="helpers.js"></script>
+  <!-- unit tests -->
+  <script src="unit/images.js"></script>
+
+</head>
+<body>
+
+  <div id="qunit"></div>
+
+  <h2>images</h2>
+
+  <div id="images" class="gallery">
+    <!-- images from unsplash.com -->
+    <img src="http://i.imgur.com/r8p3Xgq.jpg" />
+    <img src="http://i.imgur.com/q9zO6tw.jpg" />
+    <img src="http://i.imgur.com/bwy74ok.jpg" />
+    <img src="http://i.imgur.com/hODreXI.jpg" />
+    <img src="http://i.imgur.com/UORFJ3w.jpg" />
+    <img src="http://i.imgur.com/bAZWoqx.jpg" />
+    <img src="http://i.imgur.com/PgmEBSB.jpg" />
+    <img src="http://i.imgur.com/aboaFoB.jpg" />
+    <img src="http://i.imgur.com/LkmcILl.jpg" />
+  </div>
+
+</body>
+</html>
