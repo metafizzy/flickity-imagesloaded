@@ -13,7 +13,7 @@
   if ( typeof define == 'function' && define.amd ) {
     // AMD
     define( [
-      'flickity/js/flickity',
+      'flickity/js/index',
       'imagesloaded/imagesloaded',
       'fizzy-ui-utils/utils'
     ], function( Flickity, imagesLoaded, utils ) {
