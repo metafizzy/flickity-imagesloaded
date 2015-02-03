@@ -1,5 +1,5 @@
 /*!
- * Flickity imagesLoaded v0.1.0
+ * Flickity imagesLoaded v0.1.1
  * enables imagesLoaded option for Flickity
  */
 
@@ -38,7 +38,13 @@
   }
 
 }( window, function factory( window, Flickity, imagesLoaded, utils ) {
-  'use strict';
+'use strict';
+
+Flickity.createMethods.push('_createImagesLoaded');
+
+Flickity.prototype._createImagesLoaded = function() {
+  this.on( 'activate', this.imagesLoaded );
+};
 
 Flickity.prototype.imagesLoaded = function() {
   if ( !this.options.imagesLoaded ) {
