@@ -17,6 +17,26 @@ Bower: `bower install flickity-imagesloaded`
 
 npm: `npm install flickity-imagesloaded`
 
+### RequireJS
+
+``` js
+requirejs( [ 'path/to/flickity-imagesloaded' ], function( Flickity ) {
+  var flkty = new Flickity( '.gallery', {
+    imagesLoaded: true
+  });
+});
+```
+
+### Browserify
+
+``` js
+var Flickity = require('flickity-imagesloaded');
+
+var flkty = new Flickity( '.gallery', {
+  imagesLoaded: true
+});
+```
+
 ---
 
 By [Metafizzy](http://metafizzy.co)
