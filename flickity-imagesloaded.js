@@ -1,5 +1,5 @@
 /*!
- * Flickity imagesLoaded v0.1.2
+ * Flickity imagesLoaded v0.1.3
  * enables imagesLoaded option for Flickity
  */
 
@@ -14,30 +14,27 @@
     // AMD
     define( [
       'flickity/js/index',
-      'imagesloaded/imagesloaded',
-      'fizzy-ui-utils/utils'
-    ], function( Flickity, imagesLoaded, utils ) {
-      return factory( window, Flickity, imagesLoaded, utils );
+      'imagesloaded/imagesloaded'
+    ], function( Flickity, imagesLoaded ) {
+      return factory( window, Flickity, imagesLoaded );
     });
   } else if ( typeof exports == 'object' ) {
     // CommonJS
     module.exports = factory(
       window,
       require('flickity'),
-      require('imagesloaded'),
-      require('fizzy-ui-utils')
+      require('imagesloaded')
     );
   } else {
     // browser global
     window.Flickity = factory(
       window,
       window.Flickity,
-      window.imagesLoaded,
-      window.fizzyUIUtils
+      window.imagesLoaded
     );
   }
 
-}( window, function factory( window, Flickity, imagesLoaded, utils ) {
+}( window, function factory( window, Flickity, imagesLoaded ) {
 'use strict';
 
 Flickity.createMethods.push('_createImagesLoaded');
@@ -52,12 +49,8 @@ Flickity.prototype.imagesLoaded = function() {
   }
   var _this = this;
   function onImagesLoadedProgress( instance, image ) {
-    // check if image is a cell
-    var cell = _this.getCell( image.img );
-    // otherwise get its parents
-    var cellElem = cell && cell.element ||
-      utils.getParent( image.img, '.flickity-slider > *' );
-    _this.cellSizeChange( cellElem );
+    var cell = _this.getParentCell( image.img );
+    _this.cellSizeChange( cell && cell.element );
   }
   imagesLoaded( this.slider ).on( 'progress', onImagesLoadedProgress );
 };

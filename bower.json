@@ -1,9 +1,9 @@
 {
   "name": "flickity-imagesloaded",
   "main": "flickity-imagesloaded.js",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "dependencies": {
-    "flickity": "0.2.x",
+    "flickity": "~0.2.3",
     "imagesloaded": "~3.1.8"
   },
   "devDependencies": {
