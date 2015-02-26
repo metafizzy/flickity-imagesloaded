@@ -1,10 +1,10 @@
 {
   "name": "flickity-imagesloaded",
-  "version": "0.1.4",
+  "version": "1.0.0",
   "description": "Enable imagesLoaded option for Flickity",
   "main": "flickity-imagesloaded.js",
   "dependencies": {
-    "flickity": ">=0.2.3 <0.4",
+    "flickity": "~1.0.0",
     "imagesloaded": "~3.1.8"
   },
   "scripts": {
