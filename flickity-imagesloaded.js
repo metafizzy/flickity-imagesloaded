@@ -1,5 +1,5 @@
 /*!
- * Flickity imagesLoaded v1.0.0
+ * Flickity imagesLoaded v1.0.1
  * enables imagesLoaded option for Flickity
  */
 
@@ -51,6 +51,9 @@ Flickity.prototype.imagesLoaded = function() {
   function onImagesLoadedProgress( instance, image ) {
     var cell = _this.getParentCell( image.img );
     _this.cellSizeChange( cell && cell.element );
+    if ( !_this.options.freeScroll ) {
+      _this.positionSliderAtSelected();
+    }
   }
   imagesLoaded( this.slider ).on( 'progress', onImagesLoadedProgress );
 };
