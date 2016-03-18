@@ -1,5 +1,5 @@
 /*!
- * Flickity imagesLoaded v1.0.2
+ * Flickity imagesLoaded v1.0.3
  * enables imagesLoaded option for Flickity
  */
 

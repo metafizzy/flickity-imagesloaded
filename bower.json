@@ -1,10 +1,10 @@
 {
   "name": "flickity-imagesloaded",
   "main": "flickity-imagesloaded.js",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "dependencies": {
-    "flickity": ">=1.0.0 <1.2.0",
-    "imagesloaded": ">=3.1.8 <3.3.0"
+    "flickity": "~1.0.0",
+    "imagesloaded": "~3.1.8"
   },
   "devDependencies": {
     "qunit": "~1.17.1"
