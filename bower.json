@@ -2,7 +2,7 @@
   "name": "flickity-imagesloaded",
   "main": "flickity-imagesloaded.js",
   "dependencies": {
-    "flickity": "^2.0.0",
+    "flickity": "v2",
     "imagesloaded": "^4.1.0"
   },
   "devDependencies": {
