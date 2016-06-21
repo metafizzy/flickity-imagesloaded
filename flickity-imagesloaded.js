@@ -1,15 +1,13 @@
 /*!
- * Flickity imagesLoaded v1.0.4
+ * Flickity imagesLoaded v2.0.0
  * enables imagesLoaded option for Flickity
  */
 
 /*jshint browser: true, strict: true, undef: true, unused: true */
 
 ( function( window, factory ) {
-  /*global define: false, module: false, require: false */
-  'use strict';
   // universal module definition
-
+  /*jshint strict: false */ /*globals define, module, require */
   if ( typeof define == 'function' && define.amd ) {
     // AMD
     define( [
@@ -18,7 +16,7 @@
     ], function( Flickity, imagesLoaded ) {
       return factory( window, Flickity, imagesLoaded );
     });
-  } else if ( typeof exports == 'object' ) {
+  } else if ( typeof module == 'object' && module.exports ) {
     // CommonJS
     module.exports = factory(
       window,
@@ -39,11 +37,13 @@
 
 Flickity.createMethods.push('_createImagesLoaded');
 
-Flickity.prototype._createImagesLoaded = function() {
+var proto = Flickity.prototype;
+
+proto._createImagesLoaded = function() {
   this.on( 'activate', this.imagesLoaded );
 };
 
-Flickity.prototype.imagesLoaded = function() {
+proto.imagesLoaded = function() {
   if ( !this.options.imagesLoaded ) {
     return;
   }

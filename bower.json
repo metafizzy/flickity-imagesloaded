@@ -1,13 +1,12 @@
 {
   "name": "flickity-imagesloaded",
   "main": "flickity-imagesloaded.js",
-  "version": "1.0.4",
   "dependencies": {
-    "flickity": "^1.0.0",
-    "imagesloaded": "^3.1.8"
+    "flickity": "^2.0.0",
+    "imagesloaded": "^4.1.0"
   },
   "devDependencies": {
-    "qunit": "~1.17.1"
+    "qunit": "^2.0.0"
   },
   "homepage": "https://github.com/metafizzy/flickity-imagesloaded",
   "authors": [
