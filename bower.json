@@ -2,7 +2,7 @@
   "name": "flickity-imagesloaded",
   "main": "flickity-imagesloaded.js",
   "dependencies": {
-    "flickity": "v2",
+    "flickity": "^2.0.0",
     "imagesloaded": "^4.1.0"
   },
   "devDependencies": {
@@ -13,11 +13,6 @@
     "David DeSandro"
   ],
   "description": "Enable imagesLoaded option for Flickity",
-  "moduleType": [
-    "amd",
-    "globals",
-    "node"
-  ],
   "keywords": [
     "flickity",
     "imagesloaded"

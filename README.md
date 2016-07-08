@@ -3,7 +3,7 @@
 Enables the `imagesLoaded` option for [Flickity](http://flickity.metafizzy.co)
 
 ``` js
-var flkty = new Flickity( '.main-gallery', {
+var flkty = new Flickity( '.carousel', {
   // re-position cells when images load
   imagesLoaded: true
 })
@@ -21,7 +21,7 @@ npm: `npm install flickity-imagesloaded`
 
 ``` js
 requirejs( [ 'path/to/flickity-imagesloaded' ], function( Flickity ) {
-  var flkty = new Flickity( '.gallery', {
+  var flkty = new Flickity( '.carousel', {
     imagesLoaded: true
   });
 });
@@ -32,7 +32,7 @@ requirejs( [ 'path/to/flickity-imagesloaded' ], function( Flickity ) {
 ``` js
 var Flickity = require('flickity-imagesloaded');
 
-var flkty = new Flickity( '.gallery', {
+var flkty = new Flickity( '.carousel', {
   imagesLoaded: true
 });
 ```
