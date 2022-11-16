@@ -5,7 +5,7 @@
   "main": "flickity-imagesloaded.js",
   "dependencies": {
     "flickity": "^2.0.0",
-    "imagesloaded": "^4.1.0"
+    "imagesloaded": "^5.0.0"
   },
   "devDependencies": {},
   "scripts": {
